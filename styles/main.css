@@ -1,0 +1,47 @@
+.blok1 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 25px;
+    width: 100%;
+    padding: 10px 10px; /* Вроде как положение начала */
+    background-color: rgb(54, 69, 158);
+    position: fixed;
+    z-index: 1;
+}
+
+.blok2 {
+    top: 45px;
+    left: 0px;
+    right: 0px;
+    height: 150px;
+    width: 100%;
+    padding: 10px 10px; /* Вроде как положение начала */
+    background-color: rgb(184, 184, 184);
+    position: absolute;
+    z-index: 0;
+}
+
+.blok3 {
+    top: 215px;
+    left: 0px;
+    right: 0px;
+    height: 150px;
+    width: 100%;
+    padding: 10px 10px; /* Вроде как положение начала */
+    background-color: rgb(139, 139, 139);
+    position: absolute;
+    z-index: 0;
+}
+
+.blok4 {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 25px;
+    width: 100%;
+    padding: 10px 10px; /* Вроде как положение начала */
+    background-color: rgb(184, 184, 184);
+    position: fixed;
+    z-index: 1;
+}
