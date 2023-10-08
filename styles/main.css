@@ -1,7 +1,7 @@
 .blok1 {
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 25px;
     width: 100%;
     padding: 10px 10px; /* Вроде как положение начала */
@@ -12,8 +12,8 @@
 
 .blok2 {
     top: 45px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     height: 150px;
     width: 100%;
     padding: 10px 10px; /* Вроде как положение начала */
@@ -24,8 +24,8 @@
 
 .blok3 {
     top: 215px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     height: 150px;
     width: 100%;
     padding: 10px 10px; /* Вроде как положение начала */
@@ -35,9 +35,9 @@
 }
 
 .blok4 {
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 25px;
     width: 100%;
     padding: 10px 10px; /* Вроде как положение начала */
