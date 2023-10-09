@@ -28,6 +28,12 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 697px){
+    .header__list {
+        flex-direction: column;
+    }
+}
+
 .header__text {
     color: #FFF;
     font-family: Inter, serif;
@@ -50,4 +56,62 @@
 
 .header__list-item:hover {
     text-decoration: underline;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.activity {
+    padding-top: 838px;
+}
+
+.calculator {
+    padding-top: 1379px;
+}
+
+.challenges {
+    padding-top: 1854px;
+}
+
+.mood {
+    padding-top: 2393px;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #004C93;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+}
+
+.footer__name {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+    align-self: center;
+}
+
+.footer__text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 0 150px;
+    text-align: right;
+    align-self: center;
 }
