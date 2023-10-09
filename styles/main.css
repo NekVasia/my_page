@@ -28,9 +28,24 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 697px){
+.header__burger {
+    display: none;
+    width: 60px;
+    height: 43px;
+    background-image: url(../images/burger.svg);
+}
+
+@media (max-width: 697px){
     .header__list {
-        flex-direction: column;
+        display: none;
+    }
+    .header__burger {
+        display: flex;
+    }
+    .header__list-wrapper {
+        justify-content: end;
+        padding-right: 63px;
+        align-self: center;
     }
 }
 
@@ -44,23 +59,43 @@
 }
 
 .about {
+    display: flex;
+    flex-direction: row;
     margin-top: 100px;
 }
 
+.content-block {
+    display: flex;
+}
+
+.about__description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.about__image {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .activity {
-    padding-top: 838px;
+    display: flex;
 }
 
 .calculator {
-    padding-top: 1379px;
+    display: flex;
 }
 
 .challenges {
-    padding-top: 1854px;
+    display: flex;
 }
 
 .mood {
-    padding-top: 2393px;
+    display: flex;
 }
 
 .footer {
@@ -84,6 +119,11 @@
 }
 
 .footer__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.footer__icon-wrapper {
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
@@ -91,3 +131,8 @@
     text-align: right;
     align-self: center;
 }
+
+.footer__icon--vk {
+    background-image: url(../images/vk.svg);
+}
+
