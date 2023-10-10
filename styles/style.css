@@ -44,3 +44,24 @@
     line-height: normal;
 }
 
+.activity__list__title {
+    color: #004C93;
+    font-family: Roboto;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 160%; /* 192px */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 10px
+}
+
+.activity__list__text {
+    color: #2E4674;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+    margin-left: 10px
+}
