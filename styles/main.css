@@ -188,4 +188,16 @@
         align-self: center;
         padding: 50px 50px 0px 50px;
     }
+
+    .activity__list {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .activity__list div:nth-child(even) {
+        margin-top: 0px;
+    }
+    .activity__list div:nth-child(odd) {
+        margin-bottom: 0px;
+    }
 }
