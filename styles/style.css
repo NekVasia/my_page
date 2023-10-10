@@ -65,3 +65,12 @@
     line-height: 160%; /* 25.6px */
     margin-left: 10px
 }
+
+.calculator__area__text {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+}
