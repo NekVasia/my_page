@@ -51,9 +51,6 @@
     font-style: normal;
     font-weight: 900;
     line-height: 160%; /* 192px */
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 10px
 }
 
 .activity__list__text {
@@ -63,7 +60,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 25.6px */
-    margin-left: 10px
 }
 
 .calculator__area__text {

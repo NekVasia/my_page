@@ -1,209 +1,66 @@
-.header {
+* {
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
-    width: 100%;
-    background-color: #004C93;
-    position: fixed;
-    z-index: 1;
-    display: flex;
 }
 
-.header__name {
-    width: 30%;
-    text-align: center;
-    align-self: center;
+.content-block {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.background__color:nth-child(odd) {
+    background-color: #F3FBFF;
+}
+
+.header {
+    height: 100px;
+    background-color: #004C93;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.header__box {
+
+}
+
+.header__box__name {
+    width: 300px;
 }
 
 .header__list-wrapper {
-    display: flex;
-    flex-grow: 1;
-}
 
-.header__burger {
-    display: none;
-    width: 60px;
-    height: 43px;
-    background-image: url(../images/burger.svg);
 }
 
 .header__list {
-    display: flex;
-    flex-grow: 1;
-    align-self: center;
-    justify-content: center;
-}
 
-.header__list-item {
-    text-decoration: none;
-    padding: 0 13px;
-}
-
-.header__list-item:hover {
-    text-decoration: underline;
 }
 
 .about {
     display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-}
-
-.content-block {
-    display: flex;
-}
-
-.content-block__title-mod {
-
+    justify-content: space-between;
+    margin-top: 150px;
 }
 
 .about__description {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 50px 50px 0px 165px;
-}
-
-.about__description__container {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 500px;
+    justify-content: center;
 }
 
 .about__image {
-    display: flex;
-    width: 50%;
     justify-content: center;
-    padding: 50px 165px 50px 50px;
 }
 
 .activity {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .activity__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.activity__list div:nth-child(even) {
-    margin-top: 100px;
-}
-.activity__list div:nth-child(odd) {
-    margin-bottom: 100px;
-}
-
-.activity__list-item {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 290px;
-    border-radius: 4px;
-    border: 1px solid #004C93;
-}
-
-.calculator {
-    display: flex;
-    flex-direction: column;
-}
-
-.calculator__area {
-    display: flex;
-    flex-direction: column;
-}
-
-.challenges {
-    display: flex;
-}
-
-.mood {
-    display: flex;
-    flex-direction: column;
-}
-
-.mood__image {
-    justify-content: center;
-    padding-bottom: 100px;
-    align-self: center;
-}
-
-.footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    width: 100%;
-    background-color: #004C93;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-}
-
-.footer__name {
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    text-align: center;
-    align-self: center;
-}
-
-.footer__icon {
-    width: 32px;
-    height: 32px;
-}
-
-.footer__icon-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-    padding: 0 150px;
-    text-align: right;
-    align-self: center;
-}
-
-.footer__icon--vk {
-    background-image: url(../images/vk.svg);
-}
-
-@media (max-width: 900px){
-    .header__list {
-        display: none;
-    }
-    .header__burger {
-        display: flex;
-    }
-    .header__list-wrapper {
-        justify-content: end;
-        padding-right: 63px;
-        align-self: center;
-    }
-    .about {
-        flex-direction: column;
-    }
-
-    .about__image {
-        align-self: center;
-        padding: 50px 50px 50px 50px;
-    }
-
-    .about__description {
-        align-self: center;
-        padding: 50px 50px 0px 50px;
-    }
-
-    .activity__list {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .activity__list div:nth-child(even) {
-        margin-top: 0px;
-    }
-    .activity__list div:nth-child(odd) {
-        margin-bottom: 0px;
-    }
+    justify-content: space-between;
 }
