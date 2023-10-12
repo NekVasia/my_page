@@ -29,7 +29,7 @@
 }
 
 .header__box__name {
-    width: 300px;
+
 }
 
 .header__list {
@@ -50,11 +50,15 @@
 }
 
 .about__description {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
 }
 
 .about__image {
+    display: flex;
     justify-content: center;
+    width: auto;
 }
 
 .activity {
@@ -70,8 +74,21 @@
     justify-content: space-between;
 }
 
+.activity__box {
+    border: 1px solid #004C93;
+    width: 200px;
+    height: 289px;
+    border-radius: 4px;
+}
 
+.activity__box__number {
+    margin: 10px 25px -6px 12px;
+    padding: 0;
+}
 
+.activity__box__content {
+    margin: 0 25px 12px 12px;
+}
 
 @media (max-width: 1110px) {
 
