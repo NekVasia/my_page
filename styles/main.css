@@ -2,6 +2,9 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .content-block {
@@ -41,6 +44,11 @@
 
 .header__list-item {
     margin-left: 25px;
+    text-decoration: none;
+}
+
+.header__list-item:hover {
+    text-decoration: underline;
 }
 
 .about {
@@ -72,6 +80,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .activity__box {
@@ -81,6 +90,13 @@
     border-radius: 4px;
 }
 
+.activity__box:nth-child(even) {
+    margin-top: 130px;
+}
+.activity__box:nth-child(odd) {
+    margin-bottom: 130px;
+}
+
 .activity__box__number {
     margin: 10px 25px -6px 12px;
     padding: 0;
@@ -88,6 +104,88 @@
 
 .activity__box__content {
     margin: 0 25px 12px 12px;
+}
+
+.challenges {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.challenges__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.challenges__box {
+    border: 1px solid #004C93;
+    width: 200px;
+    height: 289px;
+    border-radius: 4px;
+}
+
+.challenges__box:nth-child(even) {
+    margin-top: 130px;
+}
+.challenges__box:nth-child(odd) {
+    margin-bottom: 130px;
+}
+
+.challenges__box__number {
+    margin: 10px 25px 25px 12px;
+    padding: 0;
+    text-align: center;
+}
+
+.challenges__box__content {
+    margin: 0 25px 12px 12px;
+}
+
+.mood {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mood__image {
+    display: flex;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #004C93;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    text-align: right;
+    align-self: center;
+}
+
+.footer__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.footer__icon--vk {
+    background-image: url(../images/vk.svg);
 }
 
 @media (max-width: 1110px) {
