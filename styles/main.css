@@ -10,6 +10,8 @@
 .content-block {
     width: 1110px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .background__color:nth-child(odd) {
