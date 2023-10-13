@@ -64,8 +64,16 @@
     line-height: 160%; /* 25.6px */
 }
 
-.calculator__area__text {
+.calculator__input__text {
     color: #000;
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+
+.calculator__button__text {
+    color: #FFF;
     font-family: Roboto, serif;
     font-size: 14px;
     font-style: normal;
