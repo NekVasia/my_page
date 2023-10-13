@@ -34,7 +34,7 @@
 }
 
 .header__box__name {
-
+    align-self: center;
 }
 
 .header__list {
@@ -85,24 +85,24 @@
     margin-top: 50px;
 }
 
-.activity__list {
+.listing__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-.activity__box {
+.listing__box {
     border: 1px solid #004C93;
     width: 200px;
     height: 289px;
     border-radius: 4px;
 }
 
-.activity__box:nth-child(even) {
+.listing__box:nth-child(even) {
     margin-top: 130px;
 }
-.activity__box:nth-child(odd) {
+.listing__box:nth-child(odd) {
     margin-bottom: 130px;
 }
 
@@ -147,27 +147,6 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
-}
-
-.challenges__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.challenges__box {
-    border: 1px solid #004C93;
-    width: 200px;
-    height: 289px;
-    border-radius: 4px;
-}
-
-.challenges__box:nth-child(even) {
-    margin-top: 130px;
-}
-.challenges__box:nth-child(odd) {
-    margin-bottom: 130px;
 }
 
 .challenges__box__number {
@@ -228,7 +207,63 @@
     .header__list {
         display: none;
     }
+
     .header__burger {
         display: flex;
     }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .listing__container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .listing__box {
+        width: 565px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid #004C93;
+    }
+
+    .listing__box:nth-child(even) {
+        margin-top: 15px;
+    }
+    .listing__box:nth-child(odd) {
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    .activity__box__number {
+        width: 155px;
+        height: 130px;
+        flex-shrink: 0;
+        margin-left: 35px;
+    }
+
+    .activity__box__content {
+        width: 450px;
+        height: 80px;
+        margin-left: 120px;
+        flex-shrink: 0;
+    }
+
+    .challenges__box__number {
+        width: 65px;
+        height: 55px;
+        flex-shrink: 0;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+    .challenges__box__content {
+        width: 430px;
+        height: 55px;
+        margin-left: 120px;
+        flex-shrink: 0;
+    }
+
 }
