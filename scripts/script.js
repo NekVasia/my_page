@@ -1,8 +1,7 @@
 const button = document.getElementById('calculate');
-
 function calculate() {
-    var number1 = parseFloat(document.getElementById('num1').value);
-    var number2 = parseFloat(document.getElementById('num2').value);
+    var number1 = parseFloat(document.getElementById('number1').value);
+    var number2 = parseFloat(document.getElementById('number2').value);
     var operation = document.getElementById('operation').value;
     var result;
 
@@ -16,5 +15,5 @@ function calculate() {
         result = number1 / number2;
     }
 
-    document.getElementById('result').textContent = 'Результат: ' + result;
+    alert("Результат: " + result);
 }
