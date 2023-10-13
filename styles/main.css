@@ -115,6 +115,12 @@
 .calculator__input {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.calculator__field {
+    height: 32px;
 }
 
 .calculator__button {
@@ -126,7 +132,6 @@
     background: #004C93;
     margin-top: 40px;
 }
-
 
 .challenges {
     display: flex;

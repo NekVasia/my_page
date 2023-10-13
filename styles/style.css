@@ -71,6 +71,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 22.4px */
+}
 
 .calculator__button__text {
     color: #FFF;
@@ -96,5 +97,5 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 25.6px */
+    line-height: 160%;
 }
