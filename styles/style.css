@@ -52,7 +52,8 @@
     font-size: 120px;
     font-style: normal;
     font-weight: 900;
-    line-height: 160%; /* 192px */
+    line-height: 100%; /* 192px */
+    text-align: left;
 }
 
 .activity__list__text {
@@ -89,6 +90,7 @@
     font-style: normal;
     font-weight: 900;
     line-height: 100%; /* 120px */
+    text-align: center;
 }
 
 .challenges__list__text {

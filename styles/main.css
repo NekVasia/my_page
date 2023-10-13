@@ -67,26 +67,29 @@
 .about {
     display: flex;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .about__description {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 50%;
+    margin-top: 50px;
 }
 
 .about__image {
     display: flex;
     justify-content: center;
-    width: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 565px;
+    height: auto;
 }
 
 .activity {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
 }
 
 .listing__container {
@@ -94,12 +97,13 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
+    margin-top: 25px;
 }
 
 .listing__box {
     border: 1px solid #004C93;
     width: 200px;
-    height: 289px;
+    height: 290px;
     border-radius: 4px;
 }
 
@@ -110,13 +114,12 @@
     margin-bottom: 130px;
 }
 
-.activity__box__number {
-    margin: 10px 25px -6px 12px;
-    padding: 0;
+.listing__box__number {
+    padding: 10px;
 }
 
-.activity__box__content {
-    margin: 0 25px 12px 12px;
+.listing__box__content {
+    padding: 10px;
 }
 
 
@@ -144,23 +147,13 @@
     border-radius: 5px;
     background: #004C93;
     margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .challenges {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
-}
-
-.challenges__box__number {
-    margin: 10px 25px 25px 12px;
-    padding: 0;
-    text-align: center;
-}
-
-.challenges__box__content {
-    margin: 0 25px 12px 12px;
 }
 
 .mood {
@@ -172,7 +165,11 @@
 .mood__image {
     display: flex;
     align-self: center;
+    justify-content: center;
     margin-bottom: 30px;
+    width: 600px;
+    height: 560px;
+    padding-top: 25px;
 }
 
 .footer {
@@ -208,11 +205,7 @@
     background-image: url(../images/vk.svg);
 }
 
-@media (max-width: 1110px) {
-    .content-block {
-    ma
-    }
-
+@media (max-width: 1130px) {
     .header__list {
         display: none;
     }
@@ -225,17 +218,30 @@
         flex-direction: column;
     }
 
+    .about__image {
+        width: auto;
+    }
+
+    .about__description {
+        align-self: center;
+        width: auto;
+    }
+
     .listing__container {
         flex-direction: column;
         margin-top: 20px;
     }
 
     .listing__box {
-        width: 565px;
-        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 125px;
         flex-shrink: 0;
         border-radius: 4px;
         border: 1px solid #004C93;
+        overflow-y: hidden
     }
 
     .listing__box:nth-child(even) {
@@ -246,38 +252,32 @@
         margin-top: 15px;
     }
 
-    .activity__box__number {
-        width: 155px;
+    .listing__box__number {
+        width: 120px;
         height: 130px;
-        flex-shrink: 0;
-        margin-left: 35px;
     }
 
-    .activity__box__content {
+    .listing__box__content {
         width: 450px;
         height: 80px;
-        margin-left: 120px;
-        flex-shrink: 0;
     }
 
-    .challenges__box__number {
-        width: 65px;
-        height: 55px;
-        flex-shrink: 0;
-        margin-left: 40px;
-        margin-top: 30px;
+    .activity__list__title {
+        display: flex;
+        justify-content: center;
     }
 
-    .challenges__box__content {
-        width: 430px;
-        height: 55px;
-        margin-left: 120px;
-        flex-shrink: 0;
+    .calculator__input {
+        width: auto;
+    }
+
+    .mood__image {
+        height: auto;
+        width: 390px;
     }
 
     .header__burger:hover {
 
     }
 }
-
 
