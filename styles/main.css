@@ -5,16 +5,15 @@
     bottom: 0;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-.content-block {
-    width: 1110px;
+.content-wrapper {
+    max-width: 1110px;
     margin: 0 auto;
     padding-left: 60px;
     padding-right: 60px;
 }
-
-
 
 .background__color:nth-child(odd) {
     background-color: #F3FBFF;
@@ -207,7 +206,7 @@
 
 @media (max-width: 1110px) {
     .content-block {
-
+    ma
     }
 
     .header__list {

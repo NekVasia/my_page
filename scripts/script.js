@@ -1,3 +1,5 @@
+const button = document.getElementById('calculate');
+
 function calculate() {
     var number1 = parseFloat(document.getElementById('num1').value);
     var number2 = parseFloat(document.getElementById('num2').value);
