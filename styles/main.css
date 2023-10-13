@@ -7,16 +7,15 @@
     padding: 0;
     overflow-x: hidden;
 }
+.content-block:nth-child(odd) {
+    background-color: #F3FBFF;
+}
 
-.content-wrapper {
+.content-block__wrapper {
     max-width: 1110px;
     margin: 0 auto;
     padding-left: 60px;
     padding-right: 60px;
-}
-
-.background__color:nth-child(odd) {
-    background-color: #F3FBFF;
 }
 
 .header {
@@ -32,6 +31,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 60px;
+    margin: auto;
+    max-width: 1110px;
 }
 
 .header__box__name {
@@ -185,6 +188,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .footer__icon-wrapper {
