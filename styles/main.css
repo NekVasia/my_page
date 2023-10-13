@@ -51,6 +51,13 @@
     text-decoration: underline;
 }
 
+.header__burger {
+    display: none;
+    width: 60px;
+    height: 43px;
+    background-image: url(../images/burger.svg);
+}
+
 .about {
     display: flex;
     justify-content: space-between;
@@ -216,5 +223,10 @@
 }
 
 @media (max-width: 1110px) {
-
+    .header__list {
+        display: none;
+    }
+    .header__burger {
+        display: flex;
+    }
 }
