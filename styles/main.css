@@ -10,9 +10,12 @@
 .content-block {
     width: 1110px;
     margin: 0 auto;
+    position: sticky;
     padding-left: 60px;
     padding-right: 60px;
 }
+
+
 
 .background__color:nth-child(odd) {
     background-color: #F3FBFF;
@@ -204,6 +207,10 @@
 }
 
 @media (max-width: 1110px) {
+    .content-block {
+
+    }
+
     .header__list {
         display: none;
     }
@@ -266,4 +273,9 @@
         flex-shrink: 0;
     }
 
+    .header__burger:hover {
+
+    }
 }
+
+
