@@ -7,6 +7,17 @@
     padding: 0;
     overflow-x: hidden;
 }
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
 .content-block:nth-child(odd) {
     background-color: #F3FBFF;
 }
@@ -62,6 +73,14 @@
 }
 
 .header__dropdown {
+    display: none;
+}
+
+.header__dropdown-list {
+    display: none;
+}
+
+.header__dropdown::after {
 
 }
 
@@ -221,9 +240,9 @@
         display: block;
     }
 
-    .header__burger:hover {
-        height: 100px;
-    }
+    /*.header__burger:hover {*/
+    /*    height: 100px;*/
+    /*}*/
 
     .about {
         flex-direction: column;
