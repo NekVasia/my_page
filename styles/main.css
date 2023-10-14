@@ -75,6 +75,7 @@
     flex-direction: column;
     width: 50%;
     margin-top: 50px;
+    margin-right: 20px;
 }
 
 .about__image {
@@ -82,6 +83,7 @@
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 20px;
     width: 565px;
     height: auto;
 }
