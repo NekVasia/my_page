@@ -154,6 +154,10 @@
     margin-bottom: 50px;
 }
 
+.calculator__button:hover {
+    background: #256aad;
+}
+
 .challenges {
     display: flex;
     flex-direction: column;
@@ -222,12 +226,14 @@
         flex-direction: column;
     }
 
-    .about__image {
+    .about__description {
+        align-self: center;
+        margin-right: 0;
         width: auto;
     }
 
-    .about__description {
-        align-self: center;
+    .about__image {
+        margin-left: 0;
         width: auto;
     }
 
@@ -276,8 +282,8 @@
     }
 
     .mood__image {
-        height: auto;
-        width: 390px;
+        height: 100%;
+        width: 100%;
     }
 
     .header__burger:hover {
