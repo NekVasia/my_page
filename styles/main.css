@@ -61,8 +61,7 @@
     background-image: url(../images/burger.svg);
 }
 
-.header__burger:hover{
-    display: flex;
+.header__dropdown {
 
 }
 
@@ -219,7 +218,11 @@
     }
 
     .header__burger {
-        display: flex;
+        display: block;
+    }
+
+    .header__burger:hover {
+        height: 100px;
     }
 
     .about {
