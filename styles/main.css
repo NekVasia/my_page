@@ -51,16 +51,18 @@
 
 .header__box__name {
     align-self: center;
+    width: 220px;
 }
 
 .header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-self: center;
+    width: 70%;
 }
 
 .header__list-item {
-    margin-left: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-decoration: none;
 }
 
@@ -142,6 +144,8 @@
     width: 200px;
     height: 290px;
     border-radius: 4px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .listing__box:nth-child(even) {
@@ -153,10 +157,14 @@
 
 .listing__box__number {
     padding: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .listing__box__content {
     padding: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -208,8 +216,6 @@
     align-self: center;
     justify-content: center;
     margin-bottom: 30px;
-    width: 600px;
-    height: 560px;
     padding-top: 25px;
 }
 
@@ -246,9 +252,13 @@
     background-image: url(../images/vk.svg);
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 768px) {
     .header__list {
         display: none;
+    }
+
+    .header__list-item {
+        margin-bottom: 20px;
     }
 
     .header__burger {
@@ -284,7 +294,6 @@
         flex-shrink: 0;
         border-radius: 4px;
         border: 1px solid #004C93;
-        overflow-y: hidden
     }
 
     .listing__box:nth-child(even) {
@@ -317,10 +326,6 @@
     .mood__image {
         height: 100%;
         width: 100%;
-    }
-
-    .header__burger:hover {
-
     }
 }
 
