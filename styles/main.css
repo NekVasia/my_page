@@ -32,8 +32,8 @@
 .header {
     min-height: 100px;
     top: 0;
-    height: 100px;
-    transition: height 5.3s ease-in-out;
+    height: fit-content;
+    transition: height 0.3s ease-in-out;
     background-color: #004C93;
     display: flex;
     align-items: center;
@@ -49,18 +49,18 @@
     padding: 0 60px;
     margin: auto;
     max-width: 1110px;
-    height: 90px;
 }
 
 .header__box__name {
-    padding-top: 30px;
-    width: 220px;
+    padding-top: 36px;
+    padding-bottom: 35px;
+    width: 250px;
 }
 
 .header__list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-self: center;
     width: 65%;
 }
@@ -81,7 +81,7 @@
 .header__burger__dropdown {
     list-style: none;
     text-align: end;
-    margin-top: 20px;
+    margin-top: 33px;
     margin-bottom: 20px;
 }
 
@@ -92,6 +92,10 @@
     height: 43px;
     background-size: 60px 43px;
     background-image: url(../images/burger.svg);
+
+    .header {
+        height: 330px;
+    }
 }
 
 .header__burger__list {
@@ -101,13 +105,11 @@
 }
 
 
-
-
-
 .about {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .about__description {
@@ -122,9 +124,8 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 50px;
     margin-left: 20px;
-    width: 565px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -155,6 +156,7 @@
 .listing__box:nth-child(even) {
     margin-top: 130px;
 }
+
 .listing__box:nth-child(odd) {
     margin-bottom: 130px;
 }
@@ -305,6 +307,7 @@
     .listing__box:nth-child(even) {
         margin-top: 15px;
     }
+
     .listing__box:nth-child(odd) {
         margin-bottom: 0;
         margin-top: 15px;
