@@ -68,6 +68,7 @@
 .header__list-item {
     text-decoration: none;
     align-self: center;
+    padding-left: 20px;
 }
 
 .header__list-item:hover {
@@ -129,13 +130,17 @@
     height: auto;
 }
 
+.image {
+    object-fit: contain;
+}
+
 .activity {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.listing__container {
+.listing {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -232,6 +237,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .footer__name {
@@ -239,6 +245,10 @@
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .footer__icon-wrapper {
@@ -288,7 +298,7 @@
         width: auto;
     }
 
-    .listing__container {
+    .listing {
         flex-direction: column;
         margin-top: 20px;
     }
