@@ -1,0 +1,351 @@
+* {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+/*.content-block:nth-child(odd) {*/
+/*    background-color: #F3FBFF;*/
+/*}*/
+
+.content-block__wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.header {
+    min-height: 100px;
+    top: 0;
+    height: fit-content;
+    background-color: #004C93;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.header__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 60px;
+    margin: auto;
+    max-width: 1110px;
+}
+
+.header__box__name {
+    padding-top: 36px;
+    padding-bottom: 35px;
+    width: 250px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 70%;
+}
+
+.header__list-item {
+    text-decoration: none;
+    align-self: center;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.header__list-item:hover {
+    text-decoration: underline;
+}
+
+.header__burger {
+    display: none;
+}
+
+.header__burger__dropdown {
+    list-style: none;
+    text-align: end;
+    margin-top: 33px;
+    margin-bottom: 20px;
+}
+
+.header__burger__dropdown::after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 43px;
+    background-size: 60px 43px;
+    background-image: url(../images/burger.svg);
+}
+
+.header__burger__list {
+    min-width: 60%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.about__description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.about__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    object-fit: contain;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+.listing__box {
+    border: 1px solid #004C93;
+    width: 200px;
+    height: 290px;
+    border-radius: 4px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0 1px;
+}
+
+.listing__box:nth-child(even) {
+    margin-top: 130px;
+}
+
+.listing__box:nth-child(odd) {
+    margin-bottom: 130px;
+}
+
+.listing__box__number {
+    padding: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.listing__box__content {
+    padding: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.calculator__field {
+    height: 32px;
+    border: 1px solid #000;
+}
+
+.calculator__button {
+    display: block;
+    width: 168px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #004C93;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.calculator__button:hover {
+    background: #256aad;
+}
+
+.challenges {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mood {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mood__image {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #004C93;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.footer__icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    text-align: right;
+    align-self: center;
+}
+
+.footer__icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+}
+
+.footer__dark-mode {
+    background-image: url(../images/moon.svg);
+}
+
+.footer__icon--vk {
+    background-image: url(../images/vk.svg);
+}
+
+@media (max-width: 768px) {
+    .header__list {
+        display: none;
+    }
+
+    .header__list-item {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        align-self: end;
+    }
+
+    .header__burger {
+        position: relative;
+        display: inline-block;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about__description {
+        align-self: center;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .about__image {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .listing {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .listing__box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 125px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid #004C93;
+    }
+
+    .listing__box:nth-child(even) {
+        margin-top: 15px;
+    }
+
+    .listing__box:nth-child(odd) {
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    .listing__box__number {
+        min-width: 120px;
+        height: 130px;
+    }
+
+    .listing__box__content {
+        width: 450px;
+        height: 80px;
+    }
+
+    .activity__list__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .calculator__input {
+        width: auto;
+    }
+
+    .mood__image {
+        height: 100%;
+        width: 100%;
+    }
+}
