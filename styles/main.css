@@ -18,9 +18,9 @@
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
-.content-block:nth-child(odd) {
-    background-color: #F3FBFF;
-}
+/*.content-block:nth-child(odd) {*/
+/*    background-color: #F3FBFF;*/
+/*}*/
 
 .content-block__wrapper {
     max-width: 1110px;
@@ -67,7 +67,7 @@
 .header__list-item {
     text-decoration: none;
     align-self: center;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
@@ -106,7 +106,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
-    margin-bottom: 50px;
 }
 
 .about__description {
@@ -121,6 +120,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 20px;
     max-width: 100%;
     height: auto;
@@ -258,10 +258,12 @@
 .footer__icon {
     width: 32px;
     height: 32px;
+    margin-left: 15px;
 }
 
 .footer__dark-mode {
     background-image: url(../images/moon.svg);
+    color: #FFFFFF;
 }
 
 .footer__icon--vk {
