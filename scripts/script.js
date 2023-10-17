@@ -1,4 +1,3 @@
-const button = document.getElementById('calculate');
 function calculate() {
     var number1 = parseFloat(document.getElementById('number1').value);
     var number2 = parseFloat(document.getElementById('number2').value);
@@ -17,3 +16,14 @@ function calculate() {
 
     alert("Результат: " + result);
 }
+
+
+// Кнопка-переключатель класса
+
+const toggleButton  = document.getElementById('dark-mode');
+const element = document.getElementById('my__page');
+
+toggleButton .addEventListener('click', function() {
+    element.classList.toggle('dark');
+    element.classList.toggle('light');
+});

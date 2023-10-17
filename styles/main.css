@@ -33,7 +33,6 @@
     min-height: 100px;
     top: 0;
     height: fit-content;
-    transition: height 0.3s ease-in-out;
     background-color: #004C93;
     display: flex;
     align-items: center;
@@ -62,7 +61,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-self: center;
-    width: 65%;
+    width: 70%;
 }
 
 .header__list-item {
@@ -189,6 +188,7 @@
 
 .calculator__field {
     height: 32px;
+    border: 1px solid #000;
 }
 
 .calculator__button {
@@ -258,6 +258,10 @@
 .footer__icon {
     width: 32px;
     height: 32px;
+}
+
+.footer__dark-mode {
+    background-image: url(../images/moon.svg);
 }
 
 .footer__icon--vk {

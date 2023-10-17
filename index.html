@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="my__page" class="dark">
 <head>
     <meta charset="UTF-8">
     <title>Моя страница</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="shortcut icon" href="images/hat.png">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-<header class="header">
+<header class="header bg-gradient-to-r from-slate-900">
     <div class="header__box">
         <h2 class="header__box__name header__box__text">
             Василий&nbsp;Некрасов
@@ -38,59 +39,59 @@
     </div>
 </header>
 
-<section id="about-mp" class="content-block">
+<section id="about-mp" class="content-block dark:bg-slate-600">
     <div class="about content-block__wrapper">
-        <div class="about__description about__description__container">
-            <h2 class="content-block__title">Меня зовут Василий</h2>
-            <p class="content-block__text">И я хочу обучиться программированию, потому что мне это интересно</p>
-            <p class="content-block__text">А еще я люблю заниматься тем, что мне нравится, логично вроде как)</p>
+        <div class="about__description about__description__container ">
+            <h2 class="content-block__title dark:text-white">Меня зовут Василий</h2>
+            <p class="content-block__text dark:text-white">И я хочу обучиться программированию, потому что мне это интересно</p>
+            <p class="content-block__text dark:text-white">А еще я люблю заниматься тем, что мне нравится, логично вроде как)</p>
         </div>
         <div class="about__image"><img class="image" src="images/about_image.jpg"
                                        alt="Здесь должна быть моя фотка, но я решил поставить кое что получше:)"></div>
     </div>
 </section>
 
-<section id="activity-mp" class="content-block">
+<section id="activity-mp" class="content-block dark:bg-slate-600">
     <div class="activity content-block__wrapper">
-        <h2 class="content-block__title">
+        <h2 class="content-block__title dark:text-white">
             Моя деятельность</h2>
         <div class="listing">
             <div class="listing__box">
-                <h2 class="listing__box__number activity__list__title">1</h2>
-                <p class="listing__box__content activity__list__text">Работаю мемологом на заводе:)</p>
+                <h2 class="listing__box__number activity__list__title dark:text-white">1</h2>
+                <p class="listing__box__content activity__list__text dark:text-white">Работаю мемологом на заводе:)</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number activity__list__title">2</h2>
-                <p class="listing__box__content activity__list__text">Учу верстать<br>(╯°益°)╯彡┻━┻</p>
+                <h2 class="listing__box__number activity__list__title dark:text-white">2</h2>
+                <p class="listing__box__content activity__list__text dark:text-white">Учу верстать<br>(╯°益°)╯彡┻━┻</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number activity__list__title">3</h2>
-                <p class="listing__box__content activity__list__text">Прохожу курс молодого разработчика</p>
+                <h2 class="listing__box__number activity__list__title dark:text-white">3</h2>
+                <p class="listing__box__content activity__list__text dark:text-white">Прохожу курс молодого разработчика</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number activity__list__title">4</h2>
-                <p class="listing__box__content activity__list__text">Читаю книжки и смотрю аниме (^ω^)</p>
+                <h2 class="listing__box__number activity__list__title dark:text-white">4</h2>
+                <p class="listing__box__content activity__list__text dark:text-white">Читаю книжки и смотрю аниме (^ω^)</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number activity__list__title">5</h2>
-                <p class="listing__box__content activity__list__text">Играю в то, во что позовут</p>
+                <h2 class="listing__box__number activity__list__title dark:text-white">5</h2>
+                <p class="listing__box__content activity__list__text dark:text-white">Играю в то, во что позовут</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="calculator-mp" class="content-block">
+<section id="calculator-mp" class="content-block dark:bg-slate-600">
     <div class="calculator content-block__wrapper">
 
-        <h2 class="content-block__title">Калькулятор</h2>
+        <h2 class="content-block__title dark:text-white">Калькулятор</h2>
 
         <div class="calculator__input calculator__input__text">
-            <label for="number1">Введите первое число:</label>
+            <label for="number1" class="dark:text-white">Введите первое число:</label>
             <input type="number" id="number1" class="calculator__field">
         </div>
 
         <div class="calculator__input calculator__input__text">
-            <label for="operation">Выберите операция:</label>
+            <label for="operation" class="dark:text-white">Выберите операция:</label>
             <select id="operation" class="calculator__field">
                 <option value="calculator__option-addition">Сложение (+)</option>
                 <option value="calculator__option-subtraction">Вычитание (-)</option>
@@ -100,7 +101,7 @@
         </div>
 
         <div class="calculator__input calculator__input__text">
-            <label for="number2">Введите второе число:</label>
+            <label for="number2" class="dark:text-white">Введите второе число:</label>
             <input type="number" id="number2" class="calculator__field">
         </div>
 
@@ -108,50 +109,51 @@
     </div>
 </section>
 
-<section id="challenges-mp" class="content-block">
+<section id="challenges-mp" class="content-block  dark:bg-slate-600">
     <div class="challenges content-block__wrapper">
-        <h2 class="content-block__title">
+        <h2 class="content-block__title dark:text-white">
             Сложности</h2>
         <div class="listing">
             <div class="listing__box c">
-                <h2 class="listing__box__number challenges__list__title">?</h2>
-                <p class="listing__box__content challenges__list__text">В начале были трудности c flex</p>
+                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
+                <p class="listing__box__content challenges__list__text dark:text-white">В начале были трудности c flex</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number challenges__list__title">?</h2>
-                <p class="listing__box__content challenges__list__text">Из за ошибки в структуре скелета были
+                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
+                <p class="listing__box__content challenges__list__text dark:text-white">Из за ошибки в структуре скелета были
                     проблемы</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number challenges__list__title">?</h2>
-                <p class="listing__box__content challenges__list__text">Были проблемы с выпадающим списком</p>
+                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
+                <p class="listing__box__content challenges__list__text dark:text-white">Были проблемы с выпадающим списком</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number challenges__list__title">?</h2>
-                <p class="listing__box__content challenges__list__text">Были проблемы с калькулятором</p>
+                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
+                <p class="listing__box__content challenges__list__text dark:text-white">Были проблемы с калькулятором</p>
             </div>
             <div class="listing__box">
-                <h2 class="listing__box__number challenges__list__title">?</h2>
-                <p class="listing__box__content challenges__list__text">Были проблемы с адаптацией</p>
+                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
+                <p class="listing__box__content challenges__list__text dark:text-white">Были проблемы с адаптацией</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="mood-mp" class="content-block">
+<section id="mood-mp" class="content-block dark:bg-slate-600">
     <div class="mood content-block__wrapper">
-        <h2 class="content-block__title">
+        <h2 class="content-block__title dark:text-white">
             Настроение</h2>
         <div class="mood__image"><img src="images/work_tired.gif" alt="Устал("></div>
     </div>
 </section>
 
-<footer id="footer-mp" class="footer">
+<footer id="footer-mp" class="footer bg-gradient-to-r from-slate-900">
     <div class="footer__name">
         <div class="footer__text">
             Василий&nbsp;Некрасов
         </div>
         <div class="footer__icon-wrapper">
+            <button id="dark-mode" class="footer__icon footer__dark-mode"></button>
             <a class="footer__icon footer__icon--vk" href="https://vk.com/nek_vasia"></a>
         </div>
     </div>
