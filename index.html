@@ -11,12 +11,12 @@
 </head>
 
 <body>
-<header class="header bg-gradient-to-b bg-gradient-to-r from-slate-900">
-    <div class="header__box">
+<header class="header flex items-center fixed justify-between">
+    <div class="header__box flex justify-between">
         <h2 class="header__box__name header__box__text">
             Василий&nbsp;Некрасов
         </h2>
-        <div class="header__list">
+        <div class="header__list flex-wrap justify-evenly self-center">
             <a class="header__text header__list-item" href="#about-mp">Обо мне</a>
             <a class="header__text header__list-item" href="#activity-mp">Моя деятельность</a>
             <a class="header__text header__list-item" href="#calculator-mp">Калькулятор</a>
@@ -27,7 +27,7 @@
 
         <details class="header__burger">
             <summary class="header__burger__dropdown"></summary>
-            <nav class="header__burger__list">
+            <nav class="header__burger__list inline-flex flex-col">
                 <a class="header__text header__list-item" href="#about-mp">Обо&nbsp;мне</a>
                 <a class="header__text header__list-item" href="#activity-mp">Моя&nbsp;деятельность</a>
                 <a class="header__text header__list-item" href="#calculator-mp">Калькулятор</a>
@@ -39,59 +39,59 @@
     </div>
 </header>
 
-<section id="about-mp" class="content-block bg-gradient-to-r from-sky-950 to-sky-50">
-    <div class="about content-block__wrapper">
-        <div class="about__description about__description__container ">
-            <h2 class="content-block__title dark:text-white">Меня зовут Василий</h2>
-            <p class="content-block__text dark:text-white">И я хочу обучиться программированию, потому что мне это интересно</p>
-            <p class="content-block__text dark:text-white">А еще я люблю заниматься тем, что мне нравится, логично вроде как)</p>
+<section id="about-mp" class="content-block">
+    <div class="about flex justify-between content-block__wrapper">
+        <div class="about__description flex flex-col about__description__container ">
+            <h2 class="content-block__title">Меня зовут Василий</h2>
+            <p class="content-block__text">И я хочу обучиться программированию, потому что мне это интересно</p>
+            <p class="content-block__text">А еще я люблю заниматься тем, что мне нравится, логично вроде как)</p>
         </div>
-        <div class="about__image rounded-3xl shadow-xl"><img class="image" src="images/about_image.jpg"
+        <div class="about__image flex justify-center"><img class="image" src="images/about_image.jpg"
                                        alt="Здесь должна быть моя фотка, но я решил поставить кое что получше:)"></div>
     </div>
 </section>
 
-<section id="activity-mp" class="content-block bg-gradient-to-r from-sky-950 to-sky-50">
-    <div class="activity content-block__wrapper">
-        <h2 class="content-block__title dark:text-white">
+<section id="activity-mp" class="content-block">
+    <div class="activity flex flex-col justify-between content-block__wrapper">
+        <h2 class="content-block__title">
             Моя деятельность</h2>
-        <div class="listing">
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number activity__list__title dark:text-white">1</h2>
-                <p class="listing__box__content activity__list__text dark:text-white">Работаю мемологом на заводе:)</p>
+        <div class="listing flex flex-row justify-between">
+            <div class="listing__box">
+                <h2 class="listing__box__number activity__list__title">1</h2>
+                <p class="listing__box__content activity__list__text">Работаю мемологом на заводе:)</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number activity__list__title dark:text-white">2</h2>
-                <p class="listing__box__content activity__list__text dark:text-white">Учу верстать<br>(╯°益°)╯彡┻━┻</p>
+            <div class="listing__box">
+                <h2 class="listing__box__number activity__list__title">2</h2>
+                <p class="listing__box__content activity__list__text">Учу верстать<br>(╯°益°)╯彡┻━┻</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number activity__list__title dark:text-white">3</h2>
-                <p class="listing__box__content activity__list__text dark:text-white">Прохожу курс молодого разработчика</p>
+            <div class="listing__box">
+                <h2 class="listing__box__number activity__list__title">3</h2>
+                <p class="listing__box__content activity__list__text">Прохожу курс молодого разработчика</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number activity__list__title dark:text-white">4</h2>
-                <p class="listing__box__content activity__list__text dark:text-white">Читаю книжки и смотрю аниме (^ω^)</p>
+            <div class="listing__box">
+                <h2 class="listing__box__number activity__list__title">4</h2>
+                <p class="listing__box__content activity__list__text">Читаю книжки и смотрю аниме (^ω^)</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number activity__list__title dark:text-white">5</h2>
-                <p class="listing__box__content activity__list__text dark:text-white">Играю в то, во что позовут</p>
+            <div class="listing__box">
+                <h2 class="listing__box__number activity__list__title">5</h2>
+                <p class="listing__box__content activity__list__text">Играю в то, во что позовут</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="calculator-mp" class="content-block bg-gradient-to-r from-sky-950 to-sky-50">
-    <div class="calculator content-block__wrapper">
+<section id="calculator-mp" class="content-block">
+    <div class="calculator flex flex-col content-block__wrapper">
 
-        <h2 class="content-block__title dark:text-white">Калькулятор</h2>
+        <h2 class="content-block__title">Калькулятор</h2>
 
-        <div class="calculator__input calculator__input__text">
-            <label for="number1" class="dark:text-white">Введите первое число:</label>
+        <div class="calculator__input flex flex-col calculator__input__text">
+            <label for="number1">Введите первое число:</label>
             <input type="number" id="number1" class="calculator__field">
         </div>
 
-        <div class="calculator__input calculator__input__text">
-            <label for="operation" class="dark:text-white">Выберите операция:</label>
+        <div class="calculator__input flex flex-col calculator__input__text">
+            <label for="operation">Выберите операция:</label>
             <select id="operation" class="calculator__field">
                 <option value="calculator__option-addition">Сложение (+)</option>
                 <option value="calculator__option-subtraction">Вычитание (-)</option>
@@ -100,60 +100,60 @@
             </select>
         </div>
 
-        <div class="calculator__input calculator__input__text">
-            <label for="number2" class="dark:text-white">Введите второе число:</label>
+        <div class="calculator__input flex flex-col calculator__input__text">
+            <label for="number2">Введите второе число:</label>
             <input type="number" id="number2" class="calculator__field">
         </div>
 
-        <button onclick="calculate()" class="calculator__button calculator__button__text">Вычислить</button>
+        <button onclick="calculate()" class="calculator__button block calculator__button__text">Вычислить</button>
     </div>
 </section>
 
-<section id="challenges-mp" class="content-block bg-gradient-to-r from-sky-950 to-sky-50">
-    <div class="challenges content-block__wrapper">
-        <h2 class="content-block__title dark:text-white">
+<section id="challenges-mp" class="content-block">
+    <div class="challenges flex flex-col justify-between content-block__wrapper">
+        <h2 class="content-block__title">
             Сложности</h2>
-        <div class="listing">
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
-                <p class="listing__box__content challenges__list__text dark:text-white">В начале были трудности c flex</p>
+        <div class="listing flex flex-row justify-between">
+            <div class="listing__box">
+                <h2 class="listing__box__number challenges__list__title">?</h2>
+                <p class="listing__box__content challenges__list__text">В начале были трудности c flex</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
-                <p class="listing__box__content challenges__list__text dark:text-white">Из за ошибки в структуре скелета были
+            <div class="listing__box">
+                <h2 class="listing__box__number challenges__list__title">?</h2>
+                <p class="listing__box__content challenges__list__text">Из за ошибки в структуре скелета были
                     проблемы</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
-                <p class="listing__box__content challenges__list__text dark:text-white">Были проблемы с выпадающим списком</p>
+            <div class="listing__box">
+                <h2 class="listing__box__number challenges__list__title">?</h2>
+                <p class="listing__box__content challenges__list__text">Были проблемы с выпадающим списком</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
-                <p class="listing__box__content challenges__list__text dark:text-white">Были проблемы с калькулятором</p>
+            <div class="listing__box">
+                <h2 class="listing__box__number challenges__list__title">?</h2>
+                <p class="listing__box__content challenges__list__text">Были проблемы с калькулятором</p>
             </div>
-            <div class="listing__box border-1 border-inherit shadow-xl">
-                <h2 class="listing__box__number challenges__list__title dark:text-white">?</h2>
-                <p class="listing__box__content challenges__list__text dark:text-white">Были проблемы с адаптацией</p>
+            <div class="listing__box">
+                <h2 class="listing__box__number challenges__list__title">?</h2>
+                <p class="listing__box__content challenges__list__text">Были проблемы с адаптацией</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="mood-mp" class="content-block bg-gradient-to-r from-sky-950 to-sky-50">
-    <div class="mood content-block__wrapper">
-        <h2 class="content-block__title dark:text-white">
+<section id="mood-mp" class="content-block">
+    <div class="mood flex sticky justify-center content-block__wrapper">
+        <h2 class="content-block__title">
             Настроение</h2>
         <div class="mood__image"><img src="images/work_tired.gif"
                                       alt="Изображение которое показывает мое эмоциональное состояние("></div>
     </div>
 </section>
 
-<footer id="footer-mp" class="footer bg-gradient-to-r from-slate-900">
-    <div class="footer__name">
-        <div class="footer__text">
+<footer id="footer-mp" class="footer flex flex-row justify-between align-center">
+    <div class="footer__name flex flex-row justify-between">
+        <div class="footer__text self-center">
             Василий&nbsp;Некрасов
         </div>
-        <div class="footer__icon-wrapper">
+        <div class="footer__icon-wrapper flex justify-end">
             <button id="dark-mode" class="footer__icon footer__icon--mode"></button>
             <a class="footer__icon footer__icon--vk" href="https://youtu.be/dQw4w9WgXcQ"></a>
         </div>
