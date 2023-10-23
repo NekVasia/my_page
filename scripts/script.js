@@ -1,8 +1,8 @@
 function calculate() {
-    var number1 = parseFloat(document.getElementById('number1').value);
-    var number2 = parseFloat(document.getElementById('number2').value);
-    var operation = document.getElementById('operation').value;
-    var result;
+    let number1 = parseFloat(document.getElementById('number1').value);
+    let number2 = parseFloat(document.getElementById('number2').value);
+    let operation = document.getElementById('operation').value;
+    let result;
 
     if (operation === 'calculator__option-addition') {
         result = number1 + number2;
