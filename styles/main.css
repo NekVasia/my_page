@@ -23,7 +23,7 @@
 }
 
 .content-block {
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .content-block__wrapper {
@@ -217,10 +217,10 @@
 }
 
 .mood {
-    display: flex;
-    position: sticky;
-    flex-direction: column;
-    justify-content: center;
+    /*display: flex;*/
+    /*position: sticky;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
     width: 100%;
 }
 
@@ -233,7 +233,7 @@
 }
 
 .footer {
-    height: 100px;
+    /*height: 100px;*/
     background-color: #004C93;
     /*display: flex;*/
     /*flex-direction: row;*/
