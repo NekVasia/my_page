@@ -81,14 +81,11 @@
 
 <section id="calculator-mp" class="content-block">
     <div class="calculator content-block__wrapper">
-
         <h2 class="content-block__title">Калькулятор</h2>
-
         <div class="calculator__input calculator__input__text">
             <label for="number1">Введите первое число:</label>
             <input type="number" id="number1" class="calculator__field">
         </div>
-
         <div class="calculator__input calculator__input__text">
             <label for="operation">Выберите операция:</label>
             <select id="operation" class="calculator__field">
@@ -98,13 +95,20 @@
                 <option value="calculator__option-division">Деление (/)</option>
             </select>
         </div>
-
         <div class="calculator__input calculator__input__text">
             <label for="number2">Введите второе число:</label>
             <input type="number" id="number2" class="calculator__field">
         </div>
-
         <button onclick="calculate()" class="calculator__button calculator__button__text">Вычислить</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal__window">
+            <div class="modal__window__result">
+                <h2 class="content-block__result modal__result">Результат: </h2>
+                <p class="content-block__result modal__result" id="result"></p>
+            </div>
+            <span class="modal__close" onclick="closeModal()">×</span>
+        </div>
     </div>
 </section>
 
@@ -153,7 +157,7 @@
             Василий&nbsp;Некрасов
         </div>
         <div class="footer__icon-wrapper">
-            <button id="dark-mode" class="footer__icon footer__icon--mode"></button>
+            <button id="dark-mode" class="footer__icon footer__icon--dark-mode"></button>
             <a class="footer__icon footer__icon--vk" href="https://vk.com/nek_vasia"></a>
         </div>
     </div>

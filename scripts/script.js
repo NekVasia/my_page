@@ -1,22 +1,30 @@
+function openModal() {
+    document.getElementById("modal").style.display = "block"
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none"
+}
+
 function calculate() {
-    let number1 = parseFloat(document.getElementById('number1').value);
-    let number2 = parseFloat(document.getElementById('number2').value);
-    let operation = document.getElementById('operation').value;
+    let number1 = parseFloat(document.getElementById("number1").value);
+    let number2 = parseFloat(document.getElementById("number2").value);
+    let operation = document.getElementById("operation").value;
     let result;
 
-    if (operation === 'calculator__option-addition') {
+    if (operation === "calculator__option-addition") {
         result = number1 + number2;
-    } else if (operation === 'calculator__option-subtraction') {
+    } else if (operation === "calculator__option-subtraction") {
         result = number1 - number2;
-    } else if (operation === 'calculator__option-multiplication') {
+    } else if (operation === "calculator__option-multiplication") {
         result = number1 * number2;
-    } else if (operation === 'calculator__option-division') {
+    } else if (operation === "calculator__option-division") {
         result = number1 / number2;
     }
 
-    alert("Результат: " + result);
+    document.getElementById("result").textContent = result;
+    openModal();
 }
-
 
 // Кнопка-переключатель класса
 

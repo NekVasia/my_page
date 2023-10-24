@@ -36,6 +36,15 @@
     padding-top: 25px;
 }
 
+.content-block__result {
+    color: #004C93;
+    font-family: Inter, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .content-block__text {
     color: #004C93;
     font-family: Inter, serif;
