@@ -6,23 +6,34 @@ function closeModal() {
     document.getElementById("modal").style.display = "none"
 }
 
-function calculate() {
-    // let number1 = parseFloat(document.getElementById("number1").value);
-    // let number2 = parseFloat(document.getElementById("number2").value);
-    // let operation = document.getElementById("operation").value;
-    // let result;
-    //
-    // if (operation === "calculator__option-addition") {
-    //     result = number1 + number2;
-    // } else if (operation === "calculator__option-subtraction") {
-    //     result = number1 - number2;
-    // } else if (operation === "calculator__option-multiplication") {
-    //     result = number1 * number2;
-    // } else if (operation === "calculator__option-division") {
-    //     result = number1 / number2;
-    // }
-    //
-    // document.getElementById("result").textContent = result;
+// document.getElementsByClassName("js-calculate")[0].addEventListener("click", function(event) {
+//     calculate(event);
+// });
+
+const calculate = () => {
+
+    const data = {
+        "number1":document.getElementById("number1").value,
+        "number2":document.getElementById("number2").value,
+        "operation":document.getElementById("operation").value
+    }
+
+    fetch("scripts/calc.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("result").innerText = data.result;
+        })
+        .catch(error => {
+            document.getElementById("result").innerText = "Ошибка";
+        });
+
     openModal();
 }
 
